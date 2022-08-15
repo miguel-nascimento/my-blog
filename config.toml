@@ -24,7 +24,7 @@ stylesheets = [
 toc = true
 use_cdn = false
 favicon = "/icon/favicon.png"
-theme = "light"      
+theme = "auto"      
 
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },
