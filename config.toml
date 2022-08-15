@@ -1,0 +1,32 @@
+# The URL the site will be built for
+base_url = "https://miguel-nascimento.github.io"
+title = "Shiroikami"
+
+compile_sass = true
+theme = "apollo"
+build_search_index = true
+generate_feed = true
+minify_html = true
+
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "ayu-dark"
+
+
+[extra]
+stylesheets = [
+    "override.css",
+    "something_else.css"
+]
+toc = true
+use_cdn = false
+favicon = "/icon/favicon.png"
+theme = "light"      
+
+menu = [
+    { name = "/posts", url = "/posts", weight = 1 },
+    { name = "/about", url = "/about", weight = 2},
+]
