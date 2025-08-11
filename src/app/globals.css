@@ -8,8 +8,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-ibm-plex-mono);
+  --font-sans-jp: var(--font-ibm-plex-sans-jp);
+  --font-sans: var(--font-ibm-plex-mono);
 }
 
 @media (prefers-color-scheme: dark) {
