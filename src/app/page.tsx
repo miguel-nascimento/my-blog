@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PostList } from "@/components/PostList";
 import { getPostBySlug, getPostSlugs, type PostData } from "@/lib/posts";
 
 const sortByDate = (a: PostData, b: PostData) => {
@@ -14,15 +14,15 @@ export default async function Home() {
     .sort(sortByDate);
 
   return (
-    <div className="grid min-h-screen grid-rows-[24px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-sans sm:p-20">
-      <main className="row-start-2 flex w-full max-w-2xl flex-col items-center gap-[32px] sm:items-start">
-        <section className="grid w-full grid-cols-2 grid-rows-[2fr,1fr] justify-between">
+    <div className="grid min-h-screen grid-rows-[1fr_3fr_20px] items-center justify-items-center gap-16 p-8 pb-4 font-sans sm:p-20 sm:pb-10">
+      <main className="row-start-1 flex w-full max-w-2xl flex-col items-center gap-8 sm:items-start sm:gap-[32px]">
+        <section className="flex w-full flex-col gap-4 sm:grid sm:grid-cols-2 sm:grid-rows-[2fr,1fr] sm:justify-between sm:gap-0">
           <h1 className="font-bold font-sans-jp text-4xl tracking-wider">
             ミゲル.
           </h1>
-          <span className="place-self-end text-foreground/60 text-sm" />
+          <span className="hidden place-self-end text-foreground/60 text-sm sm:block" />
           <span className="text-foreground/60 text-sm">Miguel Nascimento</span>
-          <div className="flex gap-2 place-self-end">
+          <div className="flex gap-2 sm:place-self-end">
             <a
               className="text-foreground/60 text-sm underline underline-offset-4 transition-colors hover:text-foreground"
               href="https://x.com/miguelgomes4"
@@ -41,34 +41,16 @@ export default async function Home() {
             </a>
           </div>
         </section>
-        <ol className="w-full list-outside list-decimal space-y-2">
-          {posts.map((post) => (
-            <li
-              className="list-item w-full gap-4 tracking-[-.01em]"
-              key={post.slug}
-            >
-              <div className="flex items-baseline justify-between gap-4">
-                <Link
-                  className="font-mono hover:underline hover:underline-offset-4"
-                  href={`/blog/${post.slug}`}
-                >
-                  {post.frontmatter.title ?? post.slug}
-                </Link>
-                {post.frontmatter.date ? (
-                  <time
-                    className="relative font-mono text-foreground/60 text-xs"
-                    dateTime={post.frontmatter.date}
-                  >
-                    {post.frontmatter.date}
-                  </time>
-                ) : null}
-              </div>
-            </li>
-          ))}
-        </ol>
       </main>
+      <div className="w-full max-w-2xl self-start">
+        <PostList posts={posts} />
+      </div>
 
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]" />
+      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
+        <span className="text-foreground/60 text-sm">
+          {new Date().getFullYear()}
+        </span>
+      </footer>
     </div>
   );
 }
