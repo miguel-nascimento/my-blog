@@ -46,17 +46,11 @@ export default async function Home() {
         <PostList posts={posts} />
       </div>
 
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
+      {/* <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
         <span className="text-foreground/60 text-sm">
           {new Date().getFullYear()}
         </span>
-      </footer>
+      </footer> */}
     </div>
   );
 }
-
-const _XIcon = () => (
-  <svg aria-hidden="true" fill="white" viewBox="0 0 24 24">
-    <path d="M4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4c-.6 0-1-.4-1-1V4c0-.6.4-1 1-1zm9.5 10.2l4.2-6.2H16l-3.2 4.8L10 7h-1.7l4.3 6.5-4.3 6.5H9l3.3-4.9 3.4 4.9h1.6l-4.3-6.3z" />
-  </svg>
-);
