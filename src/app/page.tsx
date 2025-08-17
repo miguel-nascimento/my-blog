@@ -41,10 +41,13 @@ export default async function Home() {
             </a>
           </div>
         </section>
-        <ol className="w-full list-inside list-decimal space-y-2 text-left">
+        <ol className="w-full list-outside list-decimal space-y-2">
           {posts.map((post) => (
-            <li className="w-full gap-4 tracking-[-.01em]" key={post.slug}>
-              <div>
+            <li
+              className="list-item w-full gap-4 tracking-[-.01em]"
+              key={post.slug}
+            >
+              <div className="flex items-baseline justify-between gap-4">
                 <Link
                   className="font-mono hover:underline hover:underline-offset-4"
                   href={`/blog/${post.slug}`}
