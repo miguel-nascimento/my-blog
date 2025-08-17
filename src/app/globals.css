@@ -1,9 +1,10 @@
+/** biome-ignore-all lint/nursery/noUnknownAtRule: tailwindcss */
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffcf5;
+  --foreground: #291b01;
 }
 
 @theme inline {
@@ -16,8 +17,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1b1202; /* deep warm brown, not flat black */
+    --foreground: #f5f0e6; /* soft off-white, parchment-ish */
   }
 }
 

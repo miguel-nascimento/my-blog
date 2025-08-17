@@ -1,9 +1,9 @@
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
-import rehypeShiki from "@shikijs/rehype";
+import rehypeShiki from '@shikijs/rehype';
+import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import { unified } from 'unified';
 
 export async function renderMarkdownToHtml(markdown: string): Promise<string> {
   const file = await unified()
@@ -12,8 +12,8 @@ export async function renderMarkdownToHtml(markdown: string): Promise<string> {
     .use(remarkRehype)
     .use(rehypeShiki, {
       themes: {
-        light: "vitesse-light",
-        dark: "vitesse-dark",
+        light: 'vitesse-light',
+        dark: 'vitesse-dark',
       },
     })
     .use(rehypeStringify)

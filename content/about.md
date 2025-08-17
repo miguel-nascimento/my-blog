@@ -7,7 +7,7 @@ Hey, I'm @miguel-nascimento!
 
 Sometimes Shiroikami, I need to start using my nickname everywhere...
 
-I'm a SWE at [Blockade Games](https://blockade.games/), currently working on [Skybox](https://skybox.blockadelabs.com/).
+I'm a SWE at ?, currently working on [Skybox](https://skybox.blockadelabs.com/).
 
 In this blog, you can expect some posts about Typescript and NixOS stuff, but I'll try to write about type theory too.
 
