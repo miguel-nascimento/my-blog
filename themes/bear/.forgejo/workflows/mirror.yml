@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  mirror:
+    runs-on: codeberg-tiny-lazy
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+      - name: Mirror filtered repository
+        uses: https://codeberg.org/alinnow/mirror-only-readme@v1.0.1
+        with:
+          other_forge_token: ${{ secrets.OTHER_FORGE_TOKEN }}
+          prune_empty: never
+          paths: |
+            README.md
+            LICENSE
