@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://shiroikami.vercel.app"
+base_url = "https://my-blog.miguelgomes13.workers.dev"
 title = "miguel-nascimento"
 
 compile_sass = false
