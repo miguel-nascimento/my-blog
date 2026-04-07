@@ -1,32 +1,39 @@
 # The URL the site will be built for
 base_url = "https://shiroikami.vercel.app"
-title = "Shiroikami"
+title = "miguel-nascimento"
 
-compile_sass = true
-theme = "apollo"
-build_search_index = true
-generate_feed = true
+compile_sass = false
+theme = "bear"
+build_search_index = false
+generate_feeds = true
 minify_html = true
+default_language = "en"
 
+taxonomies = [
+  { name = "tags", feed = true },
+]
 
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "ayu-dark"
+[translations]
+no_posts = "No posts yet"
+remove_filter = "Remove filter"
+filtering_for = "Filtering for"
+made_with = "Made with"
+table_of_contents = "Table of contents"
+language = "language"
+site = "site"
 
+[markdown.highlighting]
+enabled = true
+theme = "ayu-dark"
 
 [extra]
-stylesheets = [
-    "override.css",
-    "something_else.css"
-]
-toc = true
-use_cdn = false
-favicon = "/icon/favicon.png"
-theme = "auto"      
+date_format = "%d %b, %Y"
+site_title = "miguel's blog"
 
-menu = [
-    { name = "/posts", url = "/posts", weight = 1 },
-    { name = "/about", url = "/about", weight = 2},
-]
+[[extra.main_menu]]
+name = "Home"
+url = "@/_index.md"
+
+[[extra.main_menu]]
+name = "Blog"
+url = "@/blog/_index.md"

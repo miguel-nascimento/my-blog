@@ -1,4 +1,4 @@
-+++
-title = "Projects"
-path = "projects"
-+++
+---
+title: "Projects"
+path: "projects"
+---
