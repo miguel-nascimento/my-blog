@@ -33,7 +33,7 @@ export async function getPostBySlug(slug: string): Promise<PostData | null> {
   try {
     const raw = await fs.readFile(filePath, 'utf8');
     const matter_result = matter(raw, {
-      delimiters: '+++',
+      delimiters: '---',
       language: 'toml',
       engines: { toml: (s: string) => toml.parse(s) },
     });

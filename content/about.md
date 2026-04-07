@@ -1,30 +1,22 @@
-+++
+---
 title = "About"
 path = "about"
-+++
-
-Hey, I'm @miguel-nascimento!
-
-Sometimes Shiroikami, I need to start using my nickname everywhere...
-
-I'm a SWE at ?, currently working on [Skybox](https://skybox.blockadelabs.com/).
-
-In this blog, you can expect some posts about Typescript and NixOS stuff, but I'll try to write about type theory too.
-
 ---
 
-I'm interessed in:
+👋 hi, my name is miguel 
 
-- Nix and NixOS
-- Typescript
-- Functional Programming (OCaml, Haskell, Kind2)
-- UI/UX
-- Type Theory
+swe @ ?
 
-Contact:
+i wear many hats
+- distributed systems
+- plt
+- nix
+- type theory
+- ui/ux
+- typescript magic
 
-- Twitter: [https://twitter.com/miguelgomes4](https://twitter.com/miguelgomes4)
-- Github: [https://github.com/miguel-nascimento](https://github.com/miguel-nascimento)
-- Discord: Miguel#4123
+you can find me in
+- [twitter](https://twitter.com/miguelgomes4)
+- [github](https://github.com/miguel-nascimento)
 
-My DM is open, so free feel to reach me anytime :)
+i'll try to write more :)

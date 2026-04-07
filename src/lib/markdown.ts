@@ -15,6 +15,7 @@ export async function renderMarkdownToHtml(markdown: string): Promise<string> {
         light: 'vitesse-light',
         dark: 'vitesse-dark',
       },
+      defaultColor: false,
     })
     .use(rehypeStringify)
     .process(markdown);
