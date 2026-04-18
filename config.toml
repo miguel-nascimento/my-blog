@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://my-blog.miguelgomes13.workers.dev"
+base_url = "https://xn--sckvepb.com/"
 title = "miguel-nascimento"
 
 compile_sass = false
@@ -29,6 +29,7 @@ theme = "ayu-dark"
 [extra]
 date_format = "%d %b, %Y"
 site_title = "miguel's blog"
+hide_made_with_line = true
 
 [[extra.main_menu]]
 name = "Home"
